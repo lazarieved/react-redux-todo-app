@@ -6,9 +6,9 @@ import {Provider} from 'react-redux';
 import {store} from './store/configureStore'
 
 ReactDOM.render(
-    <Provider store={store}>
-      {console.log(store)}
-      <App/>
-    </Provider> ,
-    document.getElementById('root')
+  <Provider store={store}>
+    {console.log(store)}
+    <App/>
+  </Provider>,
+  document.getElementById('root')
 );

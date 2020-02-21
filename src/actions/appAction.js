@@ -13,6 +13,7 @@ export function addToDoInState(item) {
     })
   }
 }
+
 export function deleteToDoState(item) {
   return dispatch => {
     dispatch({
@@ -21,6 +22,7 @@ export function deleteToDoState(item) {
     })
   }
 }
+
 export function editToDoItem(item) {
   return dispatch => {
     dispatch({
@@ -29,14 +31,16 @@ export function editToDoItem(item) {
     })
   }
 }
+
 export function addSubItem(id, item) {
   return dispatch => {
     dispatch({
       type: ADD_SUB_TODO_IN_STATE,
-      payload: {id,item},
+      payload: {id, item},
     })
   }
 }
+
 export function deleteSubItemsState(id, parentId) {
   return dispatch => {
     dispatch({
@@ -45,6 +49,7 @@ export function deleteSubItemsState(id, parentId) {
     })
   }
 }
+
 export function editSubItem(item, parentId) {
   return dispatch => {
     dispatch({

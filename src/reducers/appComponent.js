@@ -52,7 +52,7 @@ export function dataReducer(state = initialState, action) {
         subItems: {
           ...state.subItems,
           [action.payload.id]: [
-            ...state.subItems[action.payload.id],
+            ...state.subItems[action.payload.id] || [],
             action.payload.item
           ]
         }
